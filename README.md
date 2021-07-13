@@ -9,7 +9,7 @@ $ yarn add github:sqdsh/boticord-api
 ```
 
 ## Using [Node.js]
-```ts
+```js
 const { BotiCord } = require("boticord-api");
 const client = new BotiCord({
   token: "API_TOKEN",
