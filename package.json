@@ -8,6 +8,9 @@
         "name": "cipherka",
         "url": "https://sqdsh.top/"
     },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.com"
+    },
     "files": [
         "interfaces.ts",
         "request.ts"
