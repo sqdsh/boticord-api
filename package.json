@@ -1,0 +1,19 @@
+{
+    "name": "boticord-api",
+    "version": "1.0.0",
+    "description": "A BotiCord API Wrapper [Public API v1]",
+    "main": "core.ts",
+    "repository": "https://github.com/sqdsh/boticord-api",
+    "author": {
+        "name": "cipherka",
+        "url": "https://sqdsh.top/"
+    },
+    "files": [
+        "interfaces.ts",
+        "request.ts"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^16.3.1"
+    }
+}
