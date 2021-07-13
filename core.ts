@@ -131,15 +131,16 @@ export class BotiCord {
   }
 
   sendServerStats({
-    serverID = null,
-    up = 0,
-    status = 0,
+    serverID,
+    up,
+    status,
     serverName = null,
     serverAvatar = null,
     serverMembersAllCount = 0,
     serverMembersOnlineCount = 0,
     serverOwnerID = null,
   }) {
+    if(!serverID || !up || !status) throw new ReferenceError("args not provided");
     return new Promise((resolve, reject) =>
       req(
         options({
