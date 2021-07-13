@@ -8,10 +8,24 @@ $ npm install github:sqdsh/boticord-api
 $ yarn add github:sqdsh/boticord-api
 ```
 
-## Using
+## Using [Node.js]
 ```ts
-import { BotiCord } from "boticord-api";
-import { IBot } from "boticord-api/interfaces";
+const { BotiCord } = require("boticord-api");
+const client = new BotiCord({
+  token: "API_TOKEN",
+  detailedData: false,
+});
+
+client.getBot("sonata").then((bot) => {
+  console.log(bot);
+});
+
+```
+
+## Using [TypeScript]
+```ts
+import { BotiCord } from "boticord-api/core.ts";
+import { IBot } from "boticord-api/interfaces.ts";
 
 const client = new BotiCord({
   token: "API_TOKEN",
